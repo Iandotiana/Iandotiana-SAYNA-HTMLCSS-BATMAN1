@@ -1,108 +1,211 @@
+@font-face {
+    font-family: 'rajdhani';
+    src: url(./Fonts/Rajdhani-Medium.ttf);
+   
+}
+@font-face
+{
+    font-family: 'spaceGrotesk';
+    src: url(./Fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+:root
+{
+    --yellow-color : #ffff00;
+    --yellow-light : #f8f184;
+    --blue-color : #19587d;
+    --red-color : #b11313;
+    --white-color : #fff;
+    --noir-color : #0d0e09;
+    --gradient-white:#eddebf5d;
+    --gradient-red:#8900085d;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: bold;
+    padding: 2% 0;
+}
+.container
+{
+    width: 70%;
+    margin: 0 auto;
+}
 body
 {
     background-color: black;
-    margin: 0;
     color: white;
-    
-    
+    font-family: 'spaceGrotesk';
 }
-#home
-{
-    margin: 0% 10% 0% 10%;
-    border: 1px solid white;
-    background: url('./Assets/Illustrations/Bathome1.png') no-repeat;
-}
-.section1
-{
-   
-}
-header
-{
-   display: flex;
-   flex-direction: row;
-    padding: 5% 0% 5% 0%;
-    
-}
-.logo
-{
-    flex-basis: 70%;
-   margin-left: 5%;
-}
-.navBar
-{
-   margin-left: 10%;
-   color: #FFFF;
-    
-    
-}
-.intro
-{
-    font-family: Rajdhani;
-    color: #FFFF;
-    text-align: center;
-    font-size: 18px;
-    margin: 10% 15% 0% 32%;
-}
-.batman
-{
-    font-size: 22px;
-    font-weight: bold;
-}
-.bouton
-{
-    
-}
-.section
+
+/* design du nav */
+nav
 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 0;
 }
-.reseauSociaux
+ul
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    
+    color: var(--white-color);
+    font-family: 'rajdhani';
+    font-size: 30px;
+}
+nav ul li a:hover
+{
+    color: var(--yellow-color);
+}
+
+/* design de section hero */
+#hero
+{
+    background-image: url(./Assets/Illustrations/Bathome1.png) ;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    margin: 0;
+}
+
+.content
 {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    margin: 6% 10% 0% 77%;
-
-}
-.icon
-{
-  padding: 20px 20px 20px 40px;
-}
-.scrolldown
-{
-    margin: 15% 0% 0% 45%;
+    justify-content: space-between;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15%;
+    font-size: 20px;
 }
 
-.section2
+.titre
 {
-    margin: 10% 5% ;
+    padding: 2% 0;
 }
+.cta
+{
+    margin-top: 3%;
+}
+.btn
+{
+   text-decoration: none;
+   color: var(--white-color);
+   font-size: 20px;
+   padding: 3% 5%;
+   margin: 0 2%;
+   background: linear-gradient(80deg, var(--gradient-white),var(--gradient-red)
+   );
+   box-shadow: var(--noir-color)5px 5px 60px;
+
+}
+.btn:hover,.btn:active
+{
+    background: linear-gradient(80deg,#eddebf ,#890008
+   );
+}
+
+section
+{
+    margin: 10% 0%;
+}
+
+.fleche
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.scroll
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+   right: 8%;
+    
+}
+.scroll img
+{
+    margin: 5px 0;
+}
+
+
+/* design des personnages */
+.batman-personnage
+{
+    display: flex;
+    justify-content: space-between;
+}
+
 .description
 {
     text-align: justify;
-    margin: 2% 15% 5% 0%;
     font-size: 18px;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    width: 80%;
+    margin-bottom: 4%;
+}
+.legende
+{
+    text-align: center;
+    font-size: 12px;
 }
 
-.listeImage1
+/* design de la partie multimedia */
+.slider-multimedia
 {
- display: flex;
- flex-direction: row;
+    display: flex;
+    width: 60%;
+    margin: 42px auto;
 }
-.image
+.slider-image
 {
-    margin-right: 7%;
-    text-align: center;
-    
+    width: 100%;
 }
-.imageSection3
+
+.slider-content
 {
-    margin: 0;
-    
+    padding: 13px;
+    background-color:#8b8a8a ;
+
 }
-.section3
+.slider-content p
 {
-    margin: 0;
+    font-size: 12px;
+}
+.slider-content h2
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.slider-content h3
+{
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 2%;
+
+}
+.slider-content span
+{
+    color: var(--yellow-color);
+}
+.slider-content p
+{
+    margin-top: 2%;
 }
