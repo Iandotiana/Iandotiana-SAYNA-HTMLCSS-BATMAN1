@@ -53,6 +53,7 @@ nav
     align-items: center;
     justify-content: space-between;
     padding: 3% 0;
+   
 }
 ul
 {
@@ -144,8 +145,21 @@ section
 {
     margin: 5px 0;
 }
-
-
+/* image flottant */
+.imageflottant1
+{
+    position: absolute;
+    left: 330px;
+    
+  
+}
+.imageflottant2
+{
+    position: absolute;
+    right: 0px;
+    
+    
+}
 /* design des personnages */
 .batman-personnage
 {
@@ -167,11 +181,25 @@ section
 }
 
 /* design de la partie multimedia */
+button
+{
+    position: relative;
+    top: 180px;
+    background: none;
+    border: none;
+}
+button.right
+{
+    right: -87%;
+}
+
+
 .slider-multimedia
 {
     display: flex;
     width: 60%;
     margin: 42px auto;
+    padding-right: 5%;
 }
 .slider-image
 {
@@ -182,6 +210,8 @@ section
 {
     padding: 13px;
     background-color:#8b8a8a ;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 
 }
 .slider-content p
@@ -209,3 +239,163 @@ section
 {
     margin-top: 2%;
 }
+
+/* design de la section formulaire */
+#formulaire
+{
+    background: linear-gradient( 80deg,var(--gradient-white),#19587d) ;
+
+}
+.form
+{
+    width: 50%;
+    margin: 0 auto;
+}
+#formulaire h1
+{    
+    text-align: center;
+    margin: 5% 0;
+    
+}
+.titreFormulaire
+{
+    font-size: 22px;
+    display: block;
+    margin: 3% 0;
+   
+}
+
+#formulaire .form input[type="email"] , textarea
+{
+    width: 90%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #c4c4c4;
+    background-color: transparent;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.flechedown img
+{
+    transform: rotate(90deg);
+    display: inline;
+    
+}
+
+.textenews ,.cocher
+{
+    font-size: 18px;
+    color: #c4c4c4;
+    width: 90%;
+}
+.textenews
+{
+    border-bottom: 2px solid #c4c4c4;
+    margin: 5% 0;
+    
+}
+.choix a
+{
+    text-decoration: none;
+    color: #c4c4c4;
+    border: 2px solid #c4c4c4;
+    margin:5%;
+    font-family: 'spaceGrotesk';
+    padding: 1% 2% ;
+}
+.choix
+{
+    margin-left: 2%;
+}
+
+.confirmer
+{
+    margin: 10% 20% 10% 25%;
+    padding: 3% 10%;
+    font-size: 20px;
+    font-family: 'rajdhani';
+     background: linear-gradient(80deg,#eddebf ,#890008
+    );
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* design  de la section citation */
+#citations
+{
+   margin: 90px; 
+   
+}
+#citations .citation-content
+{
+   text-align: center;
+   width: 50%;
+   margin: 0 auto;
+   font-size: 22px;
+}
+.auteur
+{
+   font-size: 15px;
+   font-weight: 100;
+   padding-top: 5%;
+   
+}
+.rightgui
+{
+    float: right;
+}
+
+/* design du footer */
+
+footer .container
+{
+    text-align: center;
+}
+footer
+{
+    margin-top: 20%;
+    font-size: 12px;
+}
+.social-icon
+{
+    text-align: center;
+    margin: 5% 0;
+}
+
+.social-item
+{
+    padding: 0 1%;
+}
+
+/* les lignes discrètes */
+.up-bar
+{
+    border-top: 1px solid #bcbbbd;
+    position: relative;
+    top:132px ;
+    width: 78%;
+    margin: 0 auto;
+}
+.left-bar
+{
+    border-left: 1px solid #bcbbbd;
+    position: absolute;
+    left:175px ;
+    height: 1090%;
+    margin: 0 auto;
+   
+}
+.right-bar
+{
+    border-right: 1px solid #bcbbbd;
+    position: absolute;
+    right:175px ;
+    height: 1090%;
+    margin: 0 auto;
+}
+
+
