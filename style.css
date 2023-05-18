@@ -165,8 +165,12 @@ section
 {
     display: flex;
     justify-content: space-between;
-}
 
+}
+.personnage:hover
+{
+    padding: 1%;
+}
 .description
 {
     text-align: justify;
